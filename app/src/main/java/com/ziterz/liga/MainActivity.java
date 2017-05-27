@@ -1,5 +1,6 @@
 package com.ziterz.liga;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), "Item ini pada index ke : " + position, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getBaseContext(), DetailActivity.class);
+                intent.putExtra("nama",timLiga[position].toString());
+                startActivity(intent);
             }
         });
     }
