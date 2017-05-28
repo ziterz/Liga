@@ -6,11 +6,30 @@
     android:layout_height="match_parent"
     tools:context="com.ziterz.liga.DetailActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        tools:text="Image" />
+
     <TextView
-        android:id="@+id/nama"
+        android:id="@+id/nama_lengkap"
+        style="@style/Base.TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
         android:layout_centerInParent="true"
-        android:textSize="30dp"/>
+        android:textSize="25dp"
+        tools:text="Text" />
+
+    <TextView
+        android:id="@+id/nama_singkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_lengkap"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        tools:text="Text" />
 
 </RelativeLayout>

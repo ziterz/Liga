@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Liga</string>
-    <string name="detail_liga">Detail Liga</string>
+    <string name="app_name">Dota 2 League</string>
+    <string name="detail_liga">Detail Tim</string>
 </resources>
